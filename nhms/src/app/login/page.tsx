@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-// 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 jsontoken
+
 export default function Login() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
