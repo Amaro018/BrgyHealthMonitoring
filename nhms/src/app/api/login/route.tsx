@@ -6,7 +6,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 const prisma = new PrismaClient();
-const SECRET_KEY = process.env.JWT_SECRET || '798NuJpj6pvYFDc66sUUjSd4u2Psal3BlZKj'; // Use your own secret key
+const SECRET_KEY = process.env.JWT_SECRET; // Use your own secret key
 
 export async function POST(request: Request) {
   const { email, password } = await request.json();
