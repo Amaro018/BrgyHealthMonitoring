@@ -3,7 +3,11 @@
 
 import dynamic from 'next/dynamic';
 import 'chart.js/auto';
+
 export default function Home() {
+
+
+
   const Bar = dynamic(() => import('react-chartjs-2').then((mod) => mod.Bar), {
     ssr: false,
   });

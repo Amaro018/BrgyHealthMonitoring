@@ -9,12 +9,12 @@ export default function Nav() {
         <main className=' dark:text-white'>
             <div className="flex flex-row items-center justify-between p-4 sm:p-12 md:px-24 lg:px-32">
                 <div className="logo">
-                    <h1 className="text-white">NHMS</h1>
+                    <h1 className="text-4xl font-bold"><Link href="/">NHMS</Link></h1>
                 </div>
 
                 {/* Navbar for large screens */}
-                <div className="navbar hidden sm:flex">
-                    <ul className="flex flex-row gap-4 text-white">
+                <div className="navbar hidden sm:flex text-lg ">
+                    <ul className="flex flex-row gap-4 ">
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/about">About</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
@@ -40,7 +40,7 @@ export default function Nav() {
 
             {/* Dropdown menu for small screens */}
             {isMenuOpen && (
-                <div className="sm:hidden flex justify-end items-end px-4">
+                <div className="sm:hidden absolute flex justify-end items-end px-4 w-full">
                     <ul className="flex flex-col items-end gap-2 text-white">
                         <li className='hover:font-bold'><Link href="/">Home</Link></li>
                         <li className='hover:font-bold'><Link href="/about">About</Link></li>
